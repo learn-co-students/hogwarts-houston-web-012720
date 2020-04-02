@@ -13,4 +13,7 @@ const images = [
   { id: 1, src: './truffleshuffle.jpg', title: 'augustus' }
 ]
 
-export default images
+function getImages() {
+  return images
+}
+export default getImages
