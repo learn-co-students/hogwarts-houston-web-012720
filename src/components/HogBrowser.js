@@ -14,8 +14,8 @@ export default class HogBrowser extends React.Component {
       // : <div className='ui grid container'>
       //     {hogs.map(hog => <Hog hog={hog} />)}
       //   </div>
-      <div className='ui grid container'>
-        {this.props.hogs.map(hog => <Hog hog={hog} />)}
+      <div className='ui cards'>
+        {this.props.hogs.map(hog => <Hog key={hog.name} hog={hog} />)}
       </div>
     )
   }

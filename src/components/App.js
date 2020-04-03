@@ -36,7 +36,8 @@ class App extends Component {
         break
       case 'weight':
         console.log('filtering by weight')
-        showHogs = [...filteredHogs].sort((a,b) => (a.weight < b.weight) ? 1 : -1)
+        // showHogs = [...filteredHogs].sort((a,b) => (a.weight < b.weight) ? 1 : -1)
+        showHogs = [...filteredHogs].sort((a,b) => b.weight - a.weight)
         break
       default:
         console.log('unknown filter???')
