@@ -133,6 +133,24 @@ ul {
   clear: both;
 }
 
+.content{
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn{
+  width: 95%;
+  background-color: aquamarine;
+  border-radius: 5px ;
+  transition: ease-in-out 0.5s ;
+}
+
+.btn:hover{
+  width: 99%
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
